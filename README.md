@@ -1,6 +1,11 @@
-# badminton_score_keeper
+# SmashCount (Badminton Score Keeper)
 
-A new Flutter project.
+This project is a Flutter application for tracking badminton scores.
+
+## Features
+- Score tracking for Singles and Doubles
+- Match history
+- Rules implementation (Service side, etc.)
 
 ## Getting Started
 
