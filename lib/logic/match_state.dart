@@ -127,24 +127,26 @@ class MatchNotifier extends Notifier<MatchSnapshot> {
     String? pA2,
     required String pB1,
     String? pB2,
+    String teamALabel = 'Team A',
+    String teamBLabel = 'Team B',
   }) {
     state = MatchSnapshot(
       type: type,
       teamA: TeamState(
         name1: pA1, 
         name2: pA2,
-        teamLabel: 'Team A', 
+        teamLabel: teamALabel, 
         playerInRightBox: pA1, 
-        playerInLeftBox: pA2 ?? pA1 // For singles, irrelevant but kept consistent
+        playerInLeftBox: pA2 ?? pA1 
       ),
       teamB: TeamState(
         name1: pB1, 
         name2: pB2,
-        teamLabel: 'Team B', 
+        teamLabel: teamBLabel, 
         playerInRightBox: pB1, 
         playerInLeftBox: pB2 ?? pB1
       ),
-      isTeamAServing: true, // Assuming A starts
+      isTeamAServing: true,
     );
   }
 

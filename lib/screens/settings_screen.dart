@@ -85,10 +85,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           ),
           
           const SizedBox(height: 20),
-          const Center(
+          Center(
             child: Text(
-              'Badminton Score Keeper v1.1.0',
-              style: TextStyle(color: Colors.grey),
+              'SmashCount v2.0',
+              style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant),
             ),
           )
         ],

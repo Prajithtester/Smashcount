@@ -9,21 +9,30 @@ import '../screens/new_match_screen.dart';
 import '../screens/scoreboard_screen.dart';
 import '../screens/history_screen.dart';
 import '../screens/settings_screen.dart';
+import '../screens/players_screen.dart';
+import '../screens/stats_screen.dart';
+import '../screens/splash_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authProvider);
 
   return GoRouter(
-    initialLocation: '/',
+    initialLocation: '/splash',
     redirect: (context, state) {
       final isLoggedIn = authState != null;
-      final isAuthRoute = state.matchedLocation == '/login' || state.matchedLocation == '/register';
+      final isAuthRoute = state.matchedLocation == '/login' || 
+                          state.matchedLocation == '/register' ||
+                          state.matchedLocation == '/splash';
 
       if (!isLoggedIn && !isAuthRoute) return '/login';
-      if (isLoggedIn && isAuthRoute) return '/';
+      if (isLoggedIn && state.matchedLocation == '/login') return '/';
       return null;
     },
     routes: [
+      GoRoute(
+        path: '/splash',
+        builder: (context, state) => const SplashScreen(),
+      ),
       GoRoute(
         path: '/login',
         builder: (context, state) => const LoginScreen(),
@@ -51,6 +60,14 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings',
         builder: (context, state) => const SettingsScreen(),
+      ),
+      GoRoute(
+        path: '/players',
+        builder: (context, state) => const PlayersScreen(),
+      ),
+      GoRoute(
+        path: '/stats',
+        builder: (context, state) => const StatsScreen(),
       ),
     ],
   );

@@ -1,0 +1,26 @@
+Analyzing batmintion_score...                                   
+
+   info • Parameter 'db' could be a super parameter • lib/data/database/database.dart:47:3 • use_super_parameters
+   info • Parameter 'db' could be a super parameter • lib/data/database/database.dart:87:3 • use_super_parameters
+   info • Don't invoke 'print' in production code • lib/logic/auth_provider.dart:51:7 • avoid_print
+warning • Unused import: 'package:drift/drift.dart' • lib/logic/players_provider.dart:2:8 • unused_import
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/main.dart:39:11 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/main.dart:67:11 • deprecated_member_use
+warning • Unused import: 'package:flutter/material.dart' • lib/router/app_router.dart:1:8 • unused_import
+warning • The value of the local variable 'isSingles' isn't used • lib/screens/history_screen.dart:67:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/history_screen.dart:153:65 • deprecated_member_use
+warning • Unused import: '../logic/auth_provider.dart' • lib/screens/home_screen.dart:4:8 • unused_import
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/new_match_screen.dart:92:57 • deprecated_member_use
+   info • Don't use 'BuildContext's across async gaps • lib/screens/new_match_screen.dart:264:5 • use_build_context_synchronously
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/scoreboard_screen.dart:87:117 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/scoreboard_screen.dart:88:114 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/scoreboard_screen.dart:166:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/scoreboard_screen.dart:200:33 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/scoreboard_screen.dart:241:61 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/splash_screen.dart:110:60 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/splash_screen.dart:140:62 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/splash_screen.dart:154:62 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/splash_screen.dart:167:47 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/screens/stats_screen.dart:236:48 • deprecated_member_use
+
+22 issues found. (ran in 1.4s)
